@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: imersao_devops_api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Monta o diretório atual no contêiner para refletir as alterações de código ao vivo
+      - .:/app
+    # O comando com --reload é ideal para o ambiente de desenvolvimento
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
