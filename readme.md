@@ -1,7 +1,30 @@
-# Imersão DevOps - Alura Google Cloud
+# API de Gestão Escolar – Imersão Cloud & DevOps (Alura + Google Cloud)
 
-Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e matrículas em uma instituição de ensino.
+Este projeto foi desenvolvido durante a **Imersão Cloud & DevOps**, promovida pela [Alura](https://www.alura.com.br) em parceria com o Google Cloud. A aplicação é uma **API em Python com FastAPI** para gerenciar alunos, cursos e matrículas.
 
+## Funcionalidades
+
+- Cadastro de alunos
+- Cadastro de cursos
+- Matrícula de alunos em cursos
+- Documentação interativa com Swagger UI
+
+## Acesse a API Online
+
+A API está publicada no **Google Cloud Run** e pode ser testada diretamente no navegador:
+
+[Documentação Interativa (Swagger UI)](https://api-747351593414.southamerica-east1.run.app/docs)
+
+## Tecnologias e Ferramentas
+
+- Python 3.10+
+- FastAPI
+- Docker e Docker Compose
+- GitLab CI/CD
+- Google Cloud Run
+- SQLite (banco de dados local)
+- Gemini Code Assist (para apoio com IA)
+  
 ## Pré-requisitos
 
 - [Python 3.10 ou superior instalado](https://www.python.org/downloads/)
@@ -11,7 +34,8 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 ## Passos para subir o projeto
 
 1. **Faça o download do repositório:**
-   [Clique aqui para realizar o download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
+   [Clique aqui para realizar o download](https://github.com/iamandaleao/python-cloud-run/archive/refs/heads/main.zip)
+
 
 2. **Crie um ambiente virtual:**
    ```sh
@@ -59,6 +83,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - `database.py`: Configuração do banco de dados SQLite.
 - `routers/`: Diretório com os arquivos de rotas (alunos, cursos, matrículas).
 - `requirements.txt`: Lista de dependências do projeto.
+-  `Dockerfile`: Imagem da aplicação.
 
 ---
 
@@ -66,3 +91,17 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
+## Aprendizados na Imersão
+
+- Criar e rodar contêineres com Docker  
+- Resolver o “na minha máquina funciona” com ambiente isolado  
+- Implementar CI/CD com GitLab  
+- Automatizar build, testes e deploy  
+- Fazer deploy real com Google Cloud Run  
+- Usar IA (Gemini Code Assist) para apoio no desenvolvimento  
+
+---
+
+✨ Feito com dedicação por [Amanda Leão](https://github.com/iamandaleao) durante a Imersão Cloud & DevOps – uma jornada de aprendizado sobre Docker, CI/CD, deploy na nuvem e o poder da automação no desenvolvimento.
+
+
